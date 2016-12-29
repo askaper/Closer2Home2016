@@ -12,10 +12,10 @@ class Header extends Component {
           <div className="header-top-nav-items">
             <ul className="links">
               <li>Home</li>
-              <li>About</li>
+              <li>Submit a Job</li>
+              <li>Find a Job</li>
+              <li>FAQ</li>
               <li>Contact</li>
-              <li>Lorem</li>
-              <li>Ipsum</li>
             </ul>
           </div>
         </div>
