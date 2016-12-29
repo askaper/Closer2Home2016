@@ -13,7 +13,7 @@ class App extends Component {
           <Header />
         </div>
         <div className="map-container">
-          The map component goes here - Absotitley posolutely stateful component right hurr
+          The map component goes here - Absotivley posolutely stateful component right hurr
           <Map />
         </div>
         <div className="details">

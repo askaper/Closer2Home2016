@@ -5,10 +5,10 @@ class Details extends Component {
     return (
       <div>
         <div className="details-top">
-          Footer Top - May or may not be stateful
+          This will be stateful. This will render selected map marker data
         </div>
         <div className="details-bottom">
-          Footer Bottom - Most likely stateless
+          Details bottom - Most likely stateless right here. 
         </div>
       </div>
     )
