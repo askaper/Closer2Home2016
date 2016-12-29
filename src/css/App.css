@@ -1,11 +1,28 @@
 
-
 .header-top {
   background-color: #BA53DD;
   display: flex;
 }
 
+.header-top-logo {
+  flex: 1 auto;
+  align-content: flex-start;
+  font-size: 36pt;
+  color: black;
+}
 
+.header-top-nav-items {
+  margin: 0 auto;
+  flex: 1 auto;
+  background-color: green;
+}
+
+.links > li {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  background-color: red;
+}
 
 .header-bottom {
   background-color: #BADA55;
