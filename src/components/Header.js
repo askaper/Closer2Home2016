@@ -20,7 +20,18 @@ class Header extends Component {
           </div>
         </div>
         <div className="header-bottom">
-          Header bottom - Definitely stateful
+          <div className="header-slogan-text">
+            <p className="slogan">An easier commute makes a work of difference...</p>
+            <p className="header-tagline">Find a job, post a job, let the neighbors know!</p>
+          </div>
+          <div className="address-lookup-form">
+            <div className="address-lookup">
+              <form action="">
+                <input type="text" placeholder="Enter Your Address"/>
+                <button type="submit">Take a Closer Look</button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
 

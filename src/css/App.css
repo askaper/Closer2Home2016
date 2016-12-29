@@ -42,9 +42,42 @@
 
 /* Bottom Header Stuff */
 
+@media all and (max-width: 800px) {
+  .header-bottom {
+    flex-direction: column;
+  }
+}
+
 .header-bottom {
   background-color: #BADA55;
   display: flex;
+  flex: 1 100%;
+  color: black;
+}
+
+.header-slogan-text {
+  flex: 1;
+}
+
+.address-lookup-form {
+  display: flex;
+  flex: 1;
+  background-color: yellow;
+  flex-flow: column wrap;
+  align-self: center;
+}
+
+.address-lookup {
+  flex: 1 100%;
+  align-self: center;
+}
+
+.slogan {
+  font-size: 20pt;
+}
+
+.header-tagline {
+  font-size: 12pt;
 }
 
 /* Map Stuff */
