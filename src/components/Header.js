@@ -18,7 +18,6 @@ class Header extends Component {
               <li>Ipsum</li>
             </ul>
           </div>
-          Header top - Probably stateless
         </div>
         <div className="header-bottom">
           Header bottom - Definitely stateful

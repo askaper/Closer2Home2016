@@ -1,6 +1,7 @@
 
+
+/* Top Header Stuff */
 .header-top {
-  background-color: #BA53DD;
   display: flex;
 }
 
@@ -9,30 +10,43 @@
   align-content: flex-start;
   font-size: 36pt;
   color: black;
+  background-color: purple;
 }
 
 .header-top-nav-items {
+  display: flex;
   margin: 0 auto;
-  flex: 1 auto;
   background-color: green;
 }
 
-.links > li {
-  display: inline-block;
-  list-style: none;
-  margin: 0;
-  background-color: red;
+.links {
+  display: flex;
 }
+
+.links > li {
+  flex: 1 auto;
+  align-items: center;
+  align-content: center;
+  list-style: none;
+  background-color: red;
+  margin: 10px;
+}
+
+/* Bottom Header Stuff */
 
 .header-bottom {
   background-color: #BADA55;
   display: flex;
 }
 
+/* Map Stuff */
+
 .map-container {
   background-color: red;
 
 }
+
+/* Footer Stuff */
 
 .footer-top {
   background-color: blue;
