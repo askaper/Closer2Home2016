@@ -1,18 +1,31 @@
 import React, { Component } from 'react';
-import logo from './img/logo.svg';
-import './App.css';
+import '../css/App.css';
+import Map from './Map';
 
 class App extends Component {
+
+
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+      <div className="all">
+        <div className="header">
+          <div className="header-top">
+            Header top - Probably stateless
+          </div>
+          <div className="header-bottom">
+            Header bottom - Definitely stateful
+          </div>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div className="map-container">
+          The map component goes here - Absotutely posilutely stateful component right hurr
+          <Map />
+        </div>
+        <div className="footer-top">
+          Footer Top - May or may not be stateful
+        </div>
+        <div className="footer-bottom">
+          Footer Bottom - Most likely stateless
+        </div>
       </div>
     );
   }
