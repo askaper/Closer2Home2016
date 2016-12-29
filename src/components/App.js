@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../css/App.css';
 import Header from './Header';
-import Footer from './Footer';
+import Details from './Details';
 import Map from './Map';
 
 class App extends Component {
@@ -16,8 +16,8 @@ class App extends Component {
           The map component goes here - Absotitley posolutely stateful component right hurr
           <Map />
         </div>
-        <div className="footer">
-          <Footer />
+        <div className="details">
+          <Details />
         </div>
       </div>
     );

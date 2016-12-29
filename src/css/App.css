@@ -61,7 +61,7 @@
 
 .address-lookup-form {
   display: flex;
-  flex: 1;
+  flex: 0.25;
   background-color: yellow;
   flex-flow: column wrap;
   align-self: center;
@@ -89,10 +89,10 @@
 
 /* Footer Stuff */
 
-.footer-top {
+.details-top {
   background-color: blue;
 }
 
-.footer-bottom {
+.details-bottom {
   background-color: pink;
 }

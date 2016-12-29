@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 
-class Footer extends Component {
+class Details extends Component {
   render() {
     return (
       <div>
-        <div className="footer-top">
+        <div className="details-top">
           Footer Top - May or may not be stateful
         </div>
-        <div className="footer-bottom">
+        <div className="details-bottom">
           Footer Bottom - Most likely stateless
-        </div>              
+        </div>
       </div>
     )
   }
 }
 
-export default Footer;
+export default Details;
