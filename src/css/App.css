@@ -33,8 +33,9 @@
 .links > li {
   flex: 1 auto;
   flex-grow: 1;
-  align-items: center;
-  align-content: center;
+  /*align-items: center;*/
+  /*align-content: center;*/
+  align-self: center;
   list-style: none;
   background-color: red;
   margin: 10px;
