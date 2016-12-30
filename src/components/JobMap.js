@@ -8,9 +8,9 @@ class JobMap extends Component {
       <div className="map-container">
         <div className="map">
           This is/will be the map itself.
+          <Map google={window.google}></Map>
         </div>
-          <Map google={this.props.google} zoom={14}>
-          </Map>
+
         <div className="map-marker-details">
           Location Details go here.
         </div>
