@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../css/App.css';
 import Header from './Header';
 import Details from './Details';
-import Map from './Map';
+import JobMap from './JobMap';
 
 class App extends Component {
 
@@ -14,7 +14,7 @@ class App extends Component {
         </div>
         <div className="map-container">
           The map component goes here - Absotivley posolutely stateful component right hurr
-          <Map />
+          <JobMap />
         </div>
         <div className="details">
           <Details />
