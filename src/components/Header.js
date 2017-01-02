@@ -3,11 +3,10 @@ import React, { Component } from 'react';
 class Header extends Component {
   render() {
     return (
-
       <div>
         <div className="header-top">
           <div className="header-top-logo">
-            Closer 2 Home
+            Blah blah Change text here!
           </div>
           <div className="header-top-nav-items">
             <ul className="links">
@@ -34,7 +33,6 @@ class Header extends Component {
           </div>
         </div>
       </div>
-
     )
   }
 }
