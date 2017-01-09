@@ -10,12 +10,10 @@ class MapContainer extends Component {
           This is/will be the map itself.
           <GoogleMap
             classname={'map'}
-           center={[59.744465, 30.042834]}
-           zoom={10}>
-
+            center={[59.744465, 30.042834]}
+            zoom={10}>
          </GoogleMap>
         </div>
-
         <div className="map-marker-details">
           Location Details go here.
         </div>
