@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
-import Map from 'google-maps-react';
+import GoogleMap from 'google-map-react';
 
-class JobMap extends Component {
+class MapContainer extends Component {
 
   render() {
     return(
       <div className="map-container">
         <div className="map">
           This is/will be the map itself.
-          <Map google={window.google}></Map>
+          <GoogleMap
+            classname={'map'}
+            center={[59.744465, 30.042834]}
+            zoom={10}>
+         </GoogleMap>
         </div>
-
         <div className="map-marker-details">
           Location Details go here.
         </div>
@@ -19,4 +22,4 @@ class JobMap extends Component {
   }
 }
 
-export default JobMap;
+export default MapContainer;

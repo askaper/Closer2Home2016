@@ -86,6 +86,11 @@
 
 }
 
+.map {
+  height: 300px;
+  width: 300px;
+}
+
 /* Footer Stuff */
 
 .details-top {
