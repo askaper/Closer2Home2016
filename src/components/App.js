@@ -12,8 +12,7 @@ class App extends Component {
         <div className="header">
           <Header />
         </div>
-        <div className="map-container">
-          The map component goes here - Absotivley posolutely stateful component right hurr
+        <div className="main-map-container">
           <MapContainer />
         </div>
         <div className="details">

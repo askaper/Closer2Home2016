@@ -83,12 +83,13 @@
 
 .map-container {
   background-color: red;
-
+  position: relative;
+  margin: 10px;
 }
 
 .map {
-  height: 300px;
-  width: 300px;
+  width: 75%;
+  height: 400px;
 }
 
 /* Footer Stuff */
