@@ -19,7 +19,7 @@ class MapContainer extends Component {
         this.setState({
           myLatLng: {
             lat: position.coords.latitude,
-            lng: position.coords.longtigude
+            lng: position.coords.longitude
           }
         });
       });
@@ -49,7 +49,7 @@ class MapContainer extends Component {
             }}
             classname={'map'}
             center={this.state.myLatLng}
-            zoom={10}>
+            zoom={15}>
          </GoogleMap>
         </div>
         <div className="map-marker-details">
