@@ -30,12 +30,12 @@ class MapContainer extends Component {
           lat: 41.8786738,
           lng: -87.6425221
         }
-      })
+      });
     }
   }
 
-  componentDidMount() {
-    this.getUserLocation()
+  componentWillMount() {
+    this.getUserLocation();
   }
 
   render() {
