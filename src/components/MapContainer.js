@@ -3,18 +3,52 @@ import GoogleMap from 'google-map-react';
 
 class MapContainer extends Component {
 
+  constructor() {
+    super();
+    this.state = {
+      myLatLng: {
+        lat: 41.8786738,
+        lng: -87.6425221
+      }
+    }
+  }
+
+  getUserLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition((position) => {
+        this.setState({
+          myLatLng: {
+            lat: position.coords.latitude,
+            lng: position.coords.longtigude
+          }
+        });
+      });
+    } else {
+      //set as chicago if geolocation not supported
+      this.setState({
+        myLatLng: {
+          lat: 41.8786738,
+          lng: -87.6425221
+        }
+      })
+    }
+  }
+
+  componentDidMount() {
+    this.getUserLocation()
+  }
+
   render() {
     return(
       <div className="map-container">
         <div className="map">
-          This is/will be the map itself.
           <GoogleMap
             bootstrapURLKeys={{
               key: 'AIzaSyCFTQw147or_eOBf4FY7bQliAuHcuVQSZc',
               language: 'en'
             }}
             classname={'map'}
-            center={[59.744465, 30.042834]}
+            center={this.state.myLatLng}
             zoom={10}>
          </GoogleMap>
         </div>
