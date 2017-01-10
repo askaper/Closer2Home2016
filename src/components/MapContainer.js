@@ -3,8 +3,8 @@ import GoogleMap from 'google-map-react';
 
 class MapContainer extends Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       myLatLng: {
         lat: 41.8786738,
