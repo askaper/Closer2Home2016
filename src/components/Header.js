@@ -6,7 +6,7 @@ class Header extends Component {
       <div>
         <div className="header-top">
           <div className="header-top-logo">
-            Blah blah Change text here!
+            <p>Closer 2 Home</p>
           </div>
           <div className="header-top-nav-items">
             <ul className="links">
