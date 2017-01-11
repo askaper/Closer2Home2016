@@ -13,6 +13,12 @@
   }
 }
 
+@media all and (min-width: 800px) {
+  .logo, .header-tagline, .header-slogan-text {
+    margin-left: 5px;
+  }
+}
+
 .logo {
   margin-left: 5px;
 }
@@ -61,7 +67,6 @@
 
 .header-slogan-text {
   flex: 1;
-  margin-left: 5px;
 }
 
 @media all and (max-width: 800px) {
@@ -89,7 +94,6 @@
 
 .header-tagline {
   font-size: 12pt;
-  margin-left: 5px;
 }
 
 /* Map Stuff */
