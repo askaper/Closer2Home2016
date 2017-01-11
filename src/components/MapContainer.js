@@ -38,9 +38,19 @@ class MapContainer extends Component {
     this.getUserLocation();
   }
 
+  //if user is viewing from tablet or phone, modal over map giving user option to browse or post 
+
   render() {
+
+    const mapContainerStyle = {
+      width: '100%',
+      height: '400px',
+      position: 'relative',
+      textAlign: 'center'
+    };
+
     return(
-      <div className="map-container">
+      <div className="map-container" style={mapContainerStyle}>
         <div className="map">
           <GoogleMap
             bootstrapURLKeys={{
@@ -49,11 +59,9 @@ class MapContainer extends Component {
             }}
             classname={'map'}
             center={this.state.myLatLng}
-            zoom={15}>
+            zoom={15}
+            >
          </GoogleMap>
-        </div>
-        <div className="map-marker-details">
-          Location Details go here.
         </div>
       </div>
     )
