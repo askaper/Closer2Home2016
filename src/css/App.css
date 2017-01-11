@@ -14,7 +14,7 @@
 }
 
 @media all and (min-width: 800px) {
-  .logo, .header-tagline, .header-slogan-text {
+  .logo, .header-tagline, .slogan {
     margin-left: 5px;
   }
 }
@@ -65,12 +65,12 @@
   color: black;
 }
 
-.header-slogan-text {
+.header-slogan-text-areas {
   flex: 1;
 }
 
 @media all and (max-width: 800px) {
-  .header-slogan-text {
+  .header-slogan-text-areas {
     text-align: center;
   }
 }

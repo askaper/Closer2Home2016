@@ -19,7 +19,7 @@ class Header extends Component {
           </div>
         </div>
         <div className="header-bottom">
-          <div className="header-slogan-text">
+          <div className="header-slogan-text-areas">
             <p className="slogan">An easier commute makes a work of difference...</p>
             <p className="header-tagline">Find a job, post a job, let the neighbors know!</p>
           </div>
