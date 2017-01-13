@@ -42,7 +42,7 @@ class MapContainer extends Component {
 
   render() {
 
-    return(
+    return (
       <div className="map-container">
         <div className="map">
           <GoogleMap
