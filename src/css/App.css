@@ -107,11 +107,14 @@
 .map-container {
   background-color: rgb(242, 242, 242);
   text-align: center;
+  width: 100%;
+  height: 300px;
+  max-height: 400px;
 }
 
 .map {
   width: 98%; /* Not at 100% because of development purposes until auth modal is integrated */
-  height: 400px;
+  height: 100%;
 }
 
 /* Footer Stuff */
