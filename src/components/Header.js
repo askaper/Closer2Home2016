@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 class Header extends Component {
   render() {
@@ -25,7 +25,7 @@ class Header extends Component {
           </div>
           <div className="address-lookup-form">
             <div className="address-lookup">
-              <form action="">
+              <form className="search-form" action="">
                 <input type="text" placeholder="Enter Your Address"/>
                 <button type="submit">Take a Closer Look</button>
               </form>
