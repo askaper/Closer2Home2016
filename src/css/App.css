@@ -1,6 +1,5 @@
-
-
 /* Top Header Stuff */
+
 .header-top {
   display: flex;
 }
@@ -76,8 +75,9 @@
 }
 
 @media all and (max-width: 800px) {
-  .header-slogan-text-areas {
+  .header-slogan-text-areas, .search-form {
     text-align: center;
+    margin: 5px;
   }
 }
 
