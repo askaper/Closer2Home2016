@@ -1,6 +1,5 @@
-
-
 /* Top Header Stuff */
+
 .header-top {
   display: flex;
 }
@@ -8,7 +7,7 @@
 @media all and (max-width: 800px) {
   .header-top, .header-top-logo, .header-top-nav-items {
     flex-direction: column;
-    background-color: green;
+    background-color: rgb(242, 242, 242);
     text-align: center;
   }
 }
@@ -28,13 +27,13 @@
   align-content: flex-start;
   font-size: 36pt;
   color: black;
-  background-color: purple;
+  background-color: rgb(242, 242, 242);
 }
 
 .header-top-nav-items {
   display: flex;
   margin: 0 auto;
-  background-color: green;
+  background-color: rgb(242, 242, 242);
 }
 
 .links {
@@ -46,8 +45,8 @@
   flex-grow: 1;
   align-self: center;
   list-style: none;
-  background-color: red;
-  margin: 10px;
+  background-color: rgb(242, 242, 242);
+  padding: 10px;
 }
 
 /* Bottom Header Stuff */
@@ -59,7 +58,7 @@
 }
 
 .header-bottom {
-  background-color: #BADA55;
+  background-color: rgb(242, 242, 242);
   display: flex;
   flex: 1 100%;
   color: black;
@@ -69,16 +68,23 @@
   flex: 1;
 }
 
-@media all and (max-width: 800px) {
-  .header-slogan-text-areas {
+@media all and (max-width: 1130px) {
+  .search-form {
     text-align: center;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .header-slogan-text-areas, .search-form {
+    text-align: center;
+    margin: 5px;
   }
 }
 
 .address-lookup-form {
   display: flex;
   flex: 0.25;
-  background-color: yellow;
+  background-color: rgb(242, 242, 242);
   flex-flow: column wrap;
   align-self: center;
 }
@@ -99,21 +105,24 @@
 /* Map Stuff */
 
 .map-container {
-  background-color: red;
+  background-color: rgb(242, 242, 242);
   text-align: center;
+  width: 100%;
+  height: 300px;
+  max-height: 400px;
 }
 
 .map {
   width: 98%; /* Not at 100% because of development purposes until auth modal is integrated */
-  height: 400px;
+  height: 100%;
 }
 
 /* Footer Stuff */
 
 .details-top {
-  background-color: blue;
+  background-color: rgb(242, 242, 242);
 }
 
 .details-bottom {
-  background-color: pink;
+  background-color: rgb(242, 242, 242);
 }

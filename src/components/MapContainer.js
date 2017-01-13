@@ -38,11 +38,9 @@ class MapContainer extends Component {
     this.getUserLocation();
   }
 
-  //if user is viewing from tablet or phone, modal over map giving user option to browse or post
-
   render() {
 
-    return(
+    return (
       <div className="map-container">
         <div className="map">
           <GoogleMap
