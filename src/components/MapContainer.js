@@ -42,13 +42,6 @@ class MapContainer extends Component {
 
   render() {
 
-    // const mapContainerStyle = {
-    //   width: '1024px',
-    //   height: '400px',
-    //   position: 'relative',
-    //   textAlign: 'center'
-    // };
-
     return(
       <div className="map-container">
         <div className="map">
