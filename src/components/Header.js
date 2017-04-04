@@ -1,7 +1,27 @@
 import React, { Component } from 'react';
 
 class Header extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      address: ''
+    }
+    this.changeAddress = this.changeAddress.bind(this);
+    this.submitAddress = this.submitAddress.bind(this);
+  }
+
+  changeAddress(event) {
+    this.setState({ address: event.target.value });
+  }
+
+  submitAddress(event) {
+    alert(`Testing that ${this.state.address} works!`);
+    event.preventDefault();
+  }
+
   render() {
+
     return (
       <div>
         <div className="header-top">
@@ -25,8 +45,8 @@ class Header extends Component {
           </div>
           <div className="address-lookup-form">
             <div className="address-lookup">
-              <form className="search-form" action="">
-                <input type="text" placeholder="Enter Your Address"/>
+              <form className="search-form" action="" onSubmit={this.submitAddress}>
+                <input type="text" value={this.state.address} onChange={this.changeAddress} placeholder="Enter an address!"/>
                 <button type="submit">Take a Closer Look</button>
               </form>
             </div>

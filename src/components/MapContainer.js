@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Header from './Header';
 import GoogleMap from 'google-map-react';
 
 class MapContainer extends Component {
@@ -47,7 +48,7 @@ class MapContainer extends Component {
         scrollwheel: false
       }
     }
-    
+
     return (
       <div className="map-container">
         <div className="map">
