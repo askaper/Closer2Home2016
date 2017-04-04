@@ -38,8 +38,16 @@ class MapContainer extends Component {
     this.getUserLocation();
   }
 
+
+
   render() {
 
+    const createMapOptions = () => {
+      return {
+        scrollwheel: false
+      }
+    }
+    
     return (
       <div className="map-container">
         <div className="map">
@@ -51,6 +59,7 @@ class MapContainer extends Component {
             classname={'map'}
             center={this.state.myLatLng}
             zoom={15}
+            options={createMapOptions}
             >
          </GoogleMap>
         </div>
