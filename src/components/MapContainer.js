@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import GoogleMap from 'google-map-react';
 import Search from './Search';
-import googleMapLoader from 'google-map-react/lib/utils/loaders/google_map_loader'
+import Script from 'react-load-script';
 
 
 class MapContainer extends Component {
@@ -13,7 +12,8 @@ class MapContainer extends Component {
       myLatLng: {
         lat: 41.8786738,
         lng: -87.6425221
-      }
+      },
+      scriptLoaded: false
     }
   }
 
@@ -41,9 +41,6 @@ class MapContainer extends Component {
   componentWillMount() {
     this.getUserLocation();
   }
-  // componentDidMount() {
-  //   this.props.googleMapLoader();
-  // }
 
   render() {
 
@@ -56,6 +53,7 @@ class MapContainer extends Component {
     return (
       <div className="map-container">
         <div className="map">
+          {this.state.scriptLoaded ? <Search/> : <div></div>}
           <GoogleMap
             bootstrapURLKeys={{
               key: 'AIzaSyCFTQw147or_eOBf4FY7bQliAuHcuVQSZc',
@@ -67,7 +65,6 @@ class MapContainer extends Component {
             options={createMapOptions}
             >
          </GoogleMap>
-         <Search />
         </div>
       </div>
     )
