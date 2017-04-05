@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-// import google from 'google-map-react';
 
-class SearchBox extends Component {
+class Search extends Component {
 
     render() {
 
@@ -29,4 +28,4 @@ class SearchBox extends Component {
 
   }
 
-export default SearchBox;
+export default Search;

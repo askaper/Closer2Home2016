@@ -3,7 +3,7 @@ import '../css/App.css';
 import Header from './Header';
 import Details from './Details';
 import MapContainer from './MapContainer';
-import SearchBox from './SearchBox';
+import Search from './Search';
 
 class App extends Component {
 
@@ -14,7 +14,7 @@ class App extends Component {
           <Header />
         </div>
         <div className="main-map-container">
-          <SearchBox />
+          <Search />
           <MapContainer />
         </div>
         <div className="details">

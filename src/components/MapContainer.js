@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import GoogleMap from 'google-map-react';
+import Search from './Search';
 
 class MapContainer extends Component {
 
@@ -49,6 +50,7 @@ class MapContainer extends Component {
     return (
       <div className="map-container">
         <div className="map">
+          <Search />
           <GoogleMap
             bootstrapURLKeys={{
               key: 'AIzaSyCFTQw147or_eOBf4FY7bQliAuHcuVQSZc',
