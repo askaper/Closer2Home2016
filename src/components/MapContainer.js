@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import GoogleMap from 'google-map-react';
 import Search from './Search';
+import googleMapLoader from 'google-map-react/lib/utils/loaders/google_map_loader'
+
 
 class MapContainer extends Component {
 
@@ -38,6 +41,9 @@ class MapContainer extends Component {
   componentWillMount() {
     this.getUserLocation();
   }
+  componentDidMount() {
+    this.props.googleMapLoader();
+  }
 
   render() {
 
@@ -50,7 +56,6 @@ class MapContainer extends Component {
     return (
       <div className="map-container">
         <div className="map">
-          <Search />
           <GoogleMap
             bootstrapURLKeys={{
               key: 'AIzaSyCFTQw147or_eOBf4FY7bQliAuHcuVQSZc',
@@ -62,6 +67,7 @@ class MapContainer extends Component {
             options={createMapOptions}
             >
          </GoogleMap>
+         <Search />
         </div>
       </div>
     )
