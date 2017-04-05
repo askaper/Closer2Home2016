@@ -3,10 +3,16 @@ import '../css/App.css';
 import Header from './Header';
 import Details from './Details';
 import MapContainer from './MapContainer';
-import Search from './Search';
 import Script from 'react-load-script';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      scriptLoaded: false,
+      scriptError: false
+    }
+  }
 
   handleScriptCreate() {
     this.setState({ scriptLoaded: false })
@@ -33,7 +39,7 @@ class App extends Component {
           <Header />
         </div>
         <div className="main-map-container">
-          <MapContainer />
+          {this.state.scriptLoaded ? <MapContainer /> : <div>Loading...</div>}
         </div>
         <div className="details">
           <Details />

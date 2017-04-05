@@ -41,9 +41,9 @@ class MapContainer extends Component {
   componentWillMount() {
     this.getUserLocation();
   }
-  componentDidMount() {
-    this.props.googleMapLoader();
-  }
+  // componentDidMount() {
+  //   this.props.googleMapLoader();
+  // }
 
   render() {
 
