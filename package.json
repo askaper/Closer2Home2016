@@ -16,7 +16,7 @@
     "react-google-maps": "^4.11.0"
   },
   "scripts": {
-    "start:prod": "http-server",
+    "start:prod": "http-server --port -$PORT",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
