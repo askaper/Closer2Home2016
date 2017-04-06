@@ -1,6 +1,5 @@
 import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom';
-import googleMapLoader from 'google-map-react/lib/utils/loaders/google_map_loader'
 
 
 class Search extends Component {
@@ -10,7 +9,7 @@ class Search extends Component {
     onPlacesChanged: PropTypes.func
   }
 
-  onPlacesChanged() {
+  onPlacesChanged = (event) => {
     if (this.props.onPlacesChanged) {
       this.props.onPlacesChanged(this.searchBox.getPlaces());
     }
@@ -25,14 +24,13 @@ class Search extends Component {
     this.searchBox.removeListener('places_changed', this.searchBoxListener);
   }
 
-  static defaultProps = {
-    googleMapLoader
-  }
-
     render() {
       return (
         <div>
-          <input ref="input" {...this.props} type="text"/>
+          <form>
+            <input ref="input" {...this.props} type="text" onSubmit={this.onPlacesChanged()}/>
+            <button type="submit">Find me something!</button>
+          </form>
         </div>
       )
     }
