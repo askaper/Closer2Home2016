@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import GoogleMap from 'google-map-react';
 import Search from './Search';
-import Script from 'react-load-script';
 
 
 class MapContainer extends Component {
@@ -13,7 +12,6 @@ class MapContainer extends Component {
         lat: 41.8786738,
         lng: -87.6425221
       },
-      scriptLoaded: false
     }
   }
 
@@ -65,6 +63,7 @@ class MapContainer extends Component {
             options={createMapOptions}
             >
          </GoogleMap>
+         <Search />
         </div>
       </div>
     )

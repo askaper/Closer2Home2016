@@ -10,14 +10,14 @@ class Search extends Component {
     onPlacesChanged: PropTypes.func
   }
 
-  onPlacesChanged = () => {
+  onPlacesChanged() {
     if (this.props.onPlacesChanged) {
       this.props.onPlacesChanged(this.searchBox.getPlaces());
     }
   }
   componentDidMount() {
-    this.props.googleMapLoader()
     var input = ReactDOM.findDOMNode(this.refs.input);
+    //eslint-disable-next-line no-undef
     this.searchBox = new google.maps.places.SearchBox(input);
     this.searchBoxListener.addListener('places_changed', this.onPlacesChanged);
   }
